@@ -2,8 +2,6 @@
 Name: debugbar_cache
 After:
   - '#corecache'
-Only:
-  environment: 'dev'
 ---
 SilverStripe\Core\Injector\Injector:
   Psr\SimpleCache\CacheInterface.backend:
