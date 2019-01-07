@@ -13,6 +13,7 @@ class DebugBarMiddleware implements HTTPMiddleware
 {
     public function process(HTTPRequest $request, callable $delegate)
     {
+        var_dump('debugbarmiddleware');
         $this->beforeRequest($request);
         $response = $delegate($request);
         if ($response) {
