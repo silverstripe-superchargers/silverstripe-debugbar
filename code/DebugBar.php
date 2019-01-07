@@ -370,9 +370,11 @@ class DebugBar
     public static function disabledCriteria()
     {
         $reasons = array();
+        /*
         if (!Director::isDev()) {
             $reasons[] = 'Not in dev mode';
-        }
+        }*/
+
         if (self::isDisabled()) {
             $reasons[] = 'Disabled by a constant or configuration';
         }
