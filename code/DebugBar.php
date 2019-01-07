@@ -86,11 +86,11 @@ class DebugBar
             return self::$debugbar;
         }
 
-        $reasons = self::disabledCriteria();
+/*        $reasons = self::disabledCriteria();
         if (!empty($reasons)) {
             self::$debugbar = false; // no need to check again
             return;
-        }
+        }*/
 
         self::initDebugBar();
 
