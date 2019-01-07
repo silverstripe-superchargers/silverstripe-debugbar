@@ -56,10 +56,16 @@ class DebugBarMiddleware implements HTTPMiddleware
      */
     protected function afterRequest(HTTPRequest $request, HTTPResponse $response)
     {
+        var_dump('inject debug requirements');
         $debugbar = DebugBar::getDebugBar();
+
         if (!$debugbar) {
             return;
         }
+
+        var_dump('got debugbar');
+
+
         DebugBar::setRequest($request);
 
         // All queries have been displayed
