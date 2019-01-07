@@ -5,8 +5,6 @@ Before:
   - 'app'
 After:
   - 'framework'
-Only:
-  environment: 'dev'
 ---
 LeKoala\DebugBar\DebugBar:
   enable_storage: true
